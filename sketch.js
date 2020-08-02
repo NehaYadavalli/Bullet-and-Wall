@@ -26,7 +26,7 @@ function draw() {
 
   if(hasCollided(bullet,wall)){
     bullet.velocityX=0;
-    var deformation=0.5*weight*speed*speed/thickness*thickness*thickness;
+    var deformation=(0.5*weight*speed*speed)/(thickness*thickness*thickness);
 
     if(deformation>180){
       bullet.shapeColor=color(255,0,0);
